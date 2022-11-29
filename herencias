@@ -1,0 +1,41 @@
+
+
+var persona = new Persona
+
+console.log(persona.edad)
+console.log(persona.nombre)
+console.log(persona.telefono)
+
+persona.nuevaEdad = 54
+persona.nuevoNombre = "limbert"
+persona.nuevoTelefono = 118
+
+console.log(persona)
+
+class Persona {
+    edad 
+    nombre
+    telefono
+}
+
+class Cliente extends Persona {
+    credito
+
+}
+var fulanito = new Cliente
+fulanito.edad = 23
+fulanito.nombre = "palanquetas"
+fulanito.telefono = 981
+fulanito.credito = "no doy redito"
+console.log(fulanito)
+
+class Trabajador extends Persona {
+    salario
+}
+
+var menganito = new Trabajador
+ menganito.edad = 32
+ menganito.nombre = "nico"
+ menganito.telefono = 981
+ menganito.salario = 1000
+ console.log(menganito)
